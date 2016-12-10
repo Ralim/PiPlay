@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name crystals)(type KiCad)(uri "$(KIPRJMOD)\\libs\\crystals.pretty")(options "")(descr ""))
+  (lib (name Connect)(type KiCad)(uri "$(KISYSMOD)/Connect.pretty")(options "")(descr ""))
+  (lib (name libs)(type KiCad)(uri C:\Users\Ralim\Documents\GitHub\PiPlay\Electronics\libs)(options "")(descr ""))
+)

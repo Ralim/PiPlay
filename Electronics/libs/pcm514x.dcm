@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PCM514x
+D Stereo Audio DAC
+K Audio,DAC,PCM,TI
+F file:///C:/Users/Ralim/Documents/GitHub/STMPlay/Docs/pcm5142.pdf
+$ENDCMP
+#
+#End Doc Library

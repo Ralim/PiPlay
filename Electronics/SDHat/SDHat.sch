@@ -1,0 +1,616 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Oscillators
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:motor_drivers
+LIBS:mpu-9250
+LIBS:onsemi
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:microsd_spi_cd
+LIBS:raspberrypi
+LIBS:SDHat-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L RaspberryPi J101
+U 1 1 5846B317
+P 3300 800
+F 0 "J101" H 3300 250 60  0000 C CNN
+F 1 "RaspberryPi" H 3350 700 60  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 3300 500 60  0001 C CNN
+F 3 "" H 3300 500 60  0001 C CNN
+	1    3300 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 5846B0DA
+P 2150 2950
+F 0 "#PWR01" H 2150 2700 50  0001 C CNN
+F 1 "GND" H 2150 2800 50  0000 C CNN
+F 2 "" H 2150 2950 50  0000 C CNN
+F 3 "" H 2150 2950 50  0000 C CNN
+	1    2150 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR02
+U 1 1 5846B17C
+P 2300 800
+F 0 "#PWR02" H 2300 650 50  0001 C CNN
+F 1 "VDD" H 2300 950 50  0000 C CNN
+F 2 "" H 2300 800 50  0000 C CNN
+F 3 "" H 2300 800 50  0000 C CNN
+	1    2300 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR03
+U 1 1 5846B194
+P 2050 800
+F 0 "#PWR03" H 2050 650 50  0001 C CNN
+F 1 "VCC" H 2050 950 50  0000 C CNN
+F 2 "" H 2050 800 50  0000 C CNN
+F 3 "" H 2050 800 50  0000 C CNN
+	1    2050 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L 24C16 U102
+U 1 1 5846B29A
+P 5450 1150
+F 0 "U102" H 5600 1500 50  0000 C CNN
+F 1 "24C16" H 5650 800 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5450 1150 50  0001 C CNN
+F 3 "" H 5450 1150 50  0000 C CNN
+	1    5450 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R105
+U 1 1 584772B1
+P 1650 3350
+F 0 "R105" H 1680 3370 50  0000 L CNN
+F 1 "4k" H 1680 3310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1650 3350 50  0001 C CNN
+F 3 "" H 1650 3350 50  0000 C CNN
+	1    1650 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L R_Small R106
+U 1 1 584774B4
+P 1950 3350
+F 0 "R106" H 1980 3370 50  0000 L CNN
+F 1 "4k" H 1980 3310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1950 3350 50  0001 C CNN
+F 3 "" H 1950 3350 50  0000 C CNN
+	1    1950 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C111
+U 1 1 58497D98
+P 1000 2550
+F 0 "C111" H 1010 2620 50  0000 L CNN
+F 1 "0.1u" H 1010 2470 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1000 2550 50  0001 C CNN
+F 3 "" H 1000 2550 50  0000 C CNN
+	1    1000 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 58497E41
+P 1000 2650
+F 0 "#PWR04" H 1000 2400 50  0001 C CNN
+F 1 "GND" H 1000 2500 50  0000 C CNN
+F 2 "" H 1000 2650 50  0000 C CNN
+F 3 "" H 1000 2650 50  0000 C CNN
+	1    1000 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C112
+U 1 1 58497FC2
+P 1250 2550
+F 0 "C112" H 1260 2620 50  0000 L CNN
+F 1 "0.1u" H 1260 2470 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1250 2550 50  0001 C CNN
+F 3 "" H 1250 2550 50  0000 C CNN
+	1    1250 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C113
+U 1 1 58498030
+P 1500 2550
+F 0 "C113" H 1510 2620 50  0000 L CNN
+F 1 "0.1u" H 1510 2470 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1500 2550 50  0001 C CNN
+F 3 "" H 1500 2550 50  0000 C CNN
+	1    1500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 5849818C
+P 1250 2650
+F 0 "#PWR05" H 1250 2400 50  0001 C CNN
+F 1 "GND" H 1250 2500 50  0000 C CNN
+F 2 "" H 1250 2650 50  0000 C CNN
+F 3 "" H 1250 2650 50  0000 C CNN
+	1    1250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 584981F4
+P 1500 2650
+F 0 "#PWR06" H 1500 2400 50  0001 C CNN
+F 1 "GND" H 1500 2500 50  0000 C CNN
+F 2 "" H 1500 2650 50  0000 C CNN
+F 3 "" H 1500 2650 50  0000 C CNN
+	1    1500 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR07
+U 1 1 584BAF75
+P 1250 2450
+F 0 "#PWR07" H 1250 2300 50  0001 C CNN
+F 1 "VDD" H 1250 2600 50  0000 C CNN
+F 2 "" H 1250 2450 50  0000 C CNN
+F 3 "" H 1250 2450 50  0000 C CNN
+	1    1250 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MicroSD_SPI_CD U101
+U 1 1 584BB51A
+P 7100 1250
+F 0 "U101" H 7100 1700 60  0000 C CNN
+F 1 "MicroSD_SPI_CD" V 7050 1250 60  0000 C CNN
+F 2 "libs:GCT-MEM2055-00-190-01-A" H 6950 1250 60  0001 C CNN
+F 3 "" H 6950 1250 60  0000 C CNN
+	1    7100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L MicroSD_SPI_CD U103
+U 1 1 584BB659
+P 7100 2150
+F 0 "U103" H 7100 2600 60  0000 C CNN
+F 1 "MicroSD_SPI_CD" V 7050 2150 60  0000 C CNN
+F 2 "libs:GCT-MEM2055-00-190-01-A" H 6950 2150 60  0001 C CNN
+F 3 "" H 6950 2150 60  0000 C CNN
+	1    7100 2150
+	1    0    0    -1  
+$EndComp
+Text Label 7450 1350 0    60   ~ 0
+GND
+Text Label 7450 1150 0    60   ~ 0
+VDD
+Text Label 2400 1550 2    60   ~ 0
+MOSI
+Text Label 2400 1650 2    60   ~ 0
+MISO
+Text Label 2400 1750 2    60   ~ 0
+SCLK
+Text Label 2400 1850 2    60   ~ 0
+CS0
+Text Label 2400 1950 2    60   ~ 0
+CS1
+Text Label 7450 950  0    60   ~ 0
+CS0
+Text Label 7450 1050 0    60   ~ 0
+MOSI
+Text Label 7450 1250 0    60   ~ 0
+SCLK
+Text Label 7450 1450 0    60   ~ 0
+MISO
+Text Label 7450 1850 0    60   ~ 0
+CS1
+Text Label 7450 1950 0    60   ~ 0
+MOSI
+Text Label 7450 2050 0    60   ~ 0
+VDD
+Text Label 7450 2150 0    60   ~ 0
+SCLK
+Text Label 7450 2250 0    60   ~ 0
+GND
+Text Label 7450 2350 0    60   ~ 0
+MISO
+$Comp
+L Micro_SD_SDIO U104
+U 1 1 584BC612
+P 6600 3100
+F 0 "U104" H 6600 3200 60  0000 C CNN
+F 1 "Micro_SD_SDIO" H 6600 3350 60  0000 C CNN
+F 2 "libs:GCT-MEM2055-00-190-01-A" H 6500 3500 60  0001 C CNN
+F 3 "" H 6500 3500 60  0001 C CNN
+	1    6600 3100
+	1    0    0    -1  
+$EndComp
+Text Label 7550 2800 0    60   ~ 0
+VDD
+Text Label 7550 2900 0    60   ~ 0
+GND
+Text Label 7850 3050 0    60   ~ 0
+CMD
+Text Label 7850 3150 0    60   ~ 0
+CLK
+Text Label 7850 3250 0    60   ~ 0
+DAT0
+Text Label 7850 3350 0    60   ~ 0
+DAT1
+Text Label 7850 3450 0    60   ~ 0
+DAT2
+$Comp
+L R R101
+U 1 1 584BD1D1
+P 7700 3050
+F 0 "R101" V 7780 3050 50  0000 C CNN
+F 1 "33" V 7700 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7630 3050 50  0001 C CNN
+F 3 "" H 7700 3050 50  0000 C CNN
+	1    7700 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R102
+U 1 1 584BD20A
+P 7700 3150
+F 0 "R102" V 7780 3150 50  0000 C CNN
+F 1 "33" V 7700 3150 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7630 3150 50  0001 C CNN
+F 3 "" H 7700 3150 50  0000 C CNN
+	1    7700 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R103
+U 1 1 584BD244
+P 7700 3250
+F 0 "R103" V 7780 3250 50  0000 C CNN
+F 1 "33" V 7700 3250 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7630 3250 50  0001 C CNN
+F 3 "" H 7700 3250 50  0000 C CNN
+	1    7700 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L R R104
+U 1 1 584BD281
+P 7700 3350
+F 0 "R104" V 7780 3350 50  0000 C CNN
+F 1 "33" V 7700 3350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7630 3350 50  0001 C CNN
+F 3 "" H 7700 3350 50  0000 C CNN
+	1    7700 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R107
+U 1 1 584BD2C1
+P 7700 3450
+F 0 "R107" V 7780 3450 50  0000 C CNN
+F 1 "33" V 7700 3450 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7630 3450 50  0001 C CNN
+F 3 "" H 7700 3450 50  0000 C CNN
+	1    7700 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L R R108
+U 1 1 584BD304
+P 7700 3550
+F 0 "R108" V 7780 3550 50  0000 C CNN
+F 1 "33" V 7700 3550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7630 3550 50  0001 C CNN
+F 3 "" H 7700 3550 50  0000 C CNN
+	1    7700 3550
+	0    1    1    0   
+$EndComp
+Text Label 7850 3550 0    60   ~ 0
+DAT3
+Text Label 4200 1750 0    60   ~ 0
+CLK
+Text Label 4200 1850 0    60   ~ 0
+CMD
+Text Label 4200 1950 0    60   ~ 0
+DAT0
+Text Label 4200 2050 0    60   ~ 0
+DAT1
+Text Label 4200 2650 0    60   ~ 0
+DAT2
+Text Label 4200 1650 0    60   ~ 0
+DAT3
+Text Notes 7900 1650 0    60   ~ 0
+These 2 are SPI and much, much slower
+Text Notes 8600 3350 0    60   ~ 0
+This one is SDIO and much much faster
+Text Notes 8550 1800 0    60   ~ 0
+2 MB/S
+Text Notes 9050 3500 0    60   ~ 0
+8MB/sec+
+$Comp
+L R_Small R109
+U 1 1 584BC3E4
+P 950 3350
+F 0 "R109" H 980 3370 50  0000 L CNN
+F 1 "4k" H 980 3310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 950 3350 50  0001 C CNN
+F 3 "" H 950 3350 50  0000 C CNN
+	1    950  3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R110
+U 1 1 584BC671
+P 1200 3350
+F 0 "R110" H 1230 3370 50  0000 L CNN
+F 1 "4k" H 1230 3310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" H 1200 3350 50  0001 C CNN
+F 3 "" H 1200 3350 50  0000 C CNN
+	1    1200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR08
+U 1 1 584BCAFF
+P 1200 3250
+F 0 "#PWR08" H 1200 3100 50  0001 C CNN
+F 1 "VDD" H 1200 3400 50  0000 C CNN
+F 2 "" H 1200 3250 50  0000 C CNN
+F 3 "" H 1200 3250 50  0000 C CNN
+	1    1200 3250
+	1    0    0    -1  
+$EndComp
+Text Label 950  3450 3    60   ~ 0
+CS0
+Text Label 1200 3450 3    60   ~ 0
+CS1
+$Comp
+L C_Small C101
+U 1 1 584BD014
+P 1750 2550
+F 0 "C101" H 1760 2620 50  0000 L CNN
+F 1 "0.1u" H 1760 2470 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1750 2550 50  0001 C CNN
+F 3 "" H 1750 2550 50  0000 C CNN
+	1    1750 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 584BD063
+P 1750 2650
+F 0 "#PWR09" H 1750 2400 50  0001 C CNN
+F 1 "GND" H 1750 2500 50  0000 C CNN
+F 2 "" H 1750 2650 50  0000 C CNN
+F 3 "" H 1750 2650 50  0000 C CNN
+	1    1750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 584BD481
+P 5450 1650
+F 0 "#PWR010" H 5450 1400 50  0001 C CNN
+F 1 "GND" H 5450 1500 50  0000 C CNN
+F 2 "" H 5450 1650 50  0000 C CNN
+F 3 "" H 5450 1650 50  0000 C CNN
+	1    5450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 584BD4C5
+P 4750 1150
+F 0 "#PWR011" H 4750 900 50  0001 C CNN
+F 1 "GND" H 4750 1000 50  0000 C CNN
+F 2 "" H 4750 1150 50  0000 C CNN
+F 3 "" H 4750 1150 50  0000 C CNN
+	1    4750 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 2850 2150 2850
+Connection ~ 2150 2850
+Wire Wire Line
+	2400 2550 2150 2550
+Connection ~ 2150 2550
+Wire Wire Line
+	2400 2250 2150 2250
+Connection ~ 2150 2250
+Wire Wire Line
+	2400 1050 2050 1050
+Wire Wire Line
+	2050 800  2050 1150
+Wire Wire Line
+	2050 1150 2400 1150
+Connection ~ 2050 1050
+Wire Wire Line
+	2400 950  2300 950 
+Wire Wire Line
+	2300 950  2300 800 
+Wire Wire Line
+	2400 850  2300 850 
+Connection ~ 2300 850 
+Connection ~ 1500 2450
+Connection ~ 1250 2450
+Connection ~ 1000 2450
+Wire Wire Line
+	1000 2450 1750 2450
+Wire Wire Line
+	950  3250 1950 3250
+Wire Wire Line
+	4750 950  4750 1150
+Connection ~ 4750 1050
+$Comp
+L VDD #PWR012
+U 1 1 584BD5DD
+P 5450 650
+F 0 "#PWR012" H 5450 500 50  0001 C CNN
+F 1 "VDD" H 5450 800 50  0000 C CNN
+F 2 "" H 5450 650 50  0000 C CNN
+F 3 "" H 5450 650 50  0000 C CNN
+	1    5450 650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 584BD621
+P 6150 1050
+F 0 "#PWR013" H 6150 800 50  0001 C CNN
+F 1 "GND" H 6150 900 50  0000 C CNN
+F 2 "" H 6150 1050 50  0000 C CNN
+F 3 "" H 6150 1050 50  0000 C CNN
+	1    6150 1050
+	1    0    0    -1  
+$EndComp
+Text Label 6150 1250 0    60   ~ 0
+ID_SCL
+Text Label 6150 1350 0    60   ~ 0
+ID_SDA
+Connection ~ 1200 3250
+Text Label 1650 3450 3    60   ~ 0
+ID_SDA
+Connection ~ 1650 3250
+Text Label 1950 3450 3    60   ~ 0
+ID_SCL
+Text Label 2400 1400 2    60   ~ 0
+ID_SCL
+Text Label 2400 1300 2    60   ~ 0
+ID_SDA
+Wire Wire Line
+	2150 2250 2150 2950
+Text Label 7450 2550 0    60   ~ 0
+GND
+Text Label 7550 3650 0    60   ~ 0
+GND
+Text Label 7450 1650 0    60   ~ 0
+GND
+$Comp
+L CONN_01X01 P101
+U 1 1 584C0751
+P 950 3950
+F 0 "P101" H 950 4050 50  0000 C CNN
+F 1 "CONN_01X01" V 1050 3950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 950 3950 50  0001 C CNN
+F 3 "" H 950 3950 50  0000 C CNN
+	1    950  3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P102
+U 1 1 584C090A
+P 1450 3950
+F 0 "P102" H 1450 4050 50  0000 C CNN
+F 1 "CONN_01X01" V 1550 3950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 1450 3950 50  0001 C CNN
+F 3 "" H 1450 3950 50  0000 C CNN
+	1    1450 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P103
+U 1 1 584C096D
+P 1950 3950
+F 0 "P103" H 1950 4050 50  0000 C CNN
+F 1 "CONN_01X01" V 2050 3950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 1950 3950 50  0001 C CNN
+F 3 "" H 1950 3950 50  0000 C CNN
+	1    1950 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_01X01 P104
+U 1 1 584C09CB
+P 2450 3950
+F 0 "P104" H 2450 4050 50  0000 C CNN
+F 1 "CONN_01X01" V 2550 3950 50  0000 C CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm_Pad_Via" H 2450 3950 50  0001 C CNN
+F 3 "" H 2450 3950 50  0000 C CNN
+	1    2450 3950
+	0    -1   -1   0   
+$EndComp
+$EndSCHEMATC
